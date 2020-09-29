@@ -1,0 +1,46 @@
+<div class="navbar has-shadow">
+  <div class="container">
+    <div class="navbar-left">
+      <a routerLink="/" class="navbar-item">MyComppany</a>
+    </div>
+    <span class="navbar-burger" (click)="toggleNav = !toggleNav;" [ngClass]="{'is-active': toggleNav}" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </span >
+    <div class="navbar-end navbar-menu" [ngClass]="{'is-active': toggleNav}">
+      <a routerLink="/" class="navbar-item r-item">Home</a>
+      <a class="navbar-item r-item">Features</a>
+      <a class="navbar-item r-item">About</a>
+      <a routerLink="/faq" class="navbar-item r-item">FAQ</a>
+      <div class="navbar-item">
+        <p class="control">
+          <a class="button is-primary is-outlined">
+              <span class="icon">
+                <i class="fa fa-download" ></i>
+              </span>
+            <span>Join Now</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<footer class="footer is-primary">
+  <div class="container">
+    <div class="columns">
+      <div class="column has-t">
+        <p>And this right here is a spiffy footer, where you can put stuff.</p>
+      </div>
+      <div class="column has-text-right">
+        <a href="#" class="icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
